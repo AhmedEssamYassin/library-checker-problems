@@ -6,6 +6,7 @@
 #include <algorithm>
 #include <unordered_map>
 #include <utility>
+#include <numeric>
 #ifndef __clang__
 #pragma GCC optimize("Ofast,unroll-loops")
 #endif
@@ -13,7 +14,7 @@ using namespace std;
 #define ll long long int
 #define endl "\n"
 
-struct customHash
+struct CustomHash
 {
     static uint64_t splitmix64(uint64_t x)
     {
@@ -193,6 +194,8 @@ constexpr inline int ctz128(u128 x)
 template <typename T>
 T GCD(T a, T b)
 {
+    if constexpr (sizeof(T) <= 8)
+        return std::gcd(a, b);
     if (!a || !b)
         return a | b;
     int shift = ctz128(a | b);
@@ -885,7 +888,7 @@ bool isBPSWPrime(T n)
     return strongLucasSelfridge(n);
 }
 
-unordered_map<u128, vector<u128>, customHash> cache;
+unordered_map<u128, vector<u128>, CustomHash> cache;
 template <typename T>
 void primeFactorize(T N, vector<T> &primeFactors)
 {
