@@ -53,6 +53,8 @@
   "test_mr13_01.out": "29b81b8f35e965cb10a16fe2ed6347146033f37ac0b17a8880bc1473f8b517a0",
   "test_mr7_00.in": "5ea4125eb000f13c7412fb6c6ff3f0122147868654f8266c857f273ea38f6b07",
   "test_mr7_00.out": "3cc8a878bf93614aa16972c782fc865c31972b31c02680f3f502fd6d7911283c",
+  "test_mr_combined_00.in": "95b19ddbd1b43f39274e1e282239fd34b12de5440f2cdddfa40e7c8b6c9eded2",
+  "test_mr_combined_00.out": "2dd6c33dac8175cfc80fd7715af5e70ef4e11562c8cea1813840be5e3c2f4a7b",
   "test_prime_powers_00.in": "57e57f8d7f28aafd08ac5cbacd6f394b22a9ea4dfc7d08514da5d35cea56bf03",
   "test_prime_powers_00.out": "2e9c35f5b6e55d0ceee505677545ca303a4c570c63a18424c39637e0340b021c",
   "test_pseudoprimes_00.in": "62d55044b7fe9f96ed7226f533228c9901bde0e2e58139e967e923ce8fe7c6ef",
